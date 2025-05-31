@@ -8,8 +8,8 @@ const Hero: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Image */}
         <div className="mb-8 animate-fade-in-up">
-          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 animate-float">
-            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-green-600 via-green-500 to-green-400 p-1 animate-float">
+            <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
               <span className="text-4xl font-bold text-gradient">AM</span>
             </div>
           </div>
@@ -18,10 +18,10 @@ const Hero: React.FC = () => {
         {/* Main Content */}
         <div className="space-y-6 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-4">
-            Hi, I'm Artham Mounika! 👋
+            Hi, I'm Artham Mounika! 🚀
           </h1>
           
-          <p className="text-xl md:text-2xl text-purple-600 mb-6">
+          <p className="text-xl md:text-2xl text-green-300 mb-6">
             Computer Science Engineering Student passionate about creating amazing digital experiences
           </p>
 
@@ -29,24 +29,24 @@ const Hero: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="soft-card px-6 py-4">
               <div className="flex items-center gap-2">
-                <GraduationCap className="text-purple-500" size={20} />
-                <span className="text-purple-600 font-medium">CGPA: 9.59</span>
+                <GraduationCap className="text-green-500" size={20} />
+                <span className="text-green-400 font-medium">CGPA: 9.59</span>
               </div>
             </div>
             <div className="soft-card px-6 py-4">
               <div className="flex items-center gap-2">
-                <MapPin className="text-pink-500" size={20} />
-                <span className="text-purple-600 font-medium">MRCET</span>
+                <MapPin className="text-green-500" size={20} />
+                <span className="text-green-400 font-medium">MRCET</span>
               </div>
             </div>
           </div>
 
           {/* Bio */}
           <div className="soft-card p-6 mb-8 max-w-2xl mx-auto">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               A passionate CSE student who loves turning ideas into reality through code. 
               Currently exploring the fascinating world of cloud computing, full-stack development, 
-              and building meaningful projects that make a difference. Always eager to learn and grow! ✨
+              and building meaningful projects that make a difference. Always eager to learn and grow! ⚡
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               href="https://github.com/arthammounika"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-purple-100 text-gray-600 hover:text-purple-600 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-gray-400 hover:text-green-400 transition-all duration-300 hover:scale-110"
             >
               <Github size={24} />
             </a>
@@ -83,13 +83,13 @@ const Hero: React.FC = () => {
               href="https://www.linkedin.com/in/artham-mounika-383857300"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-blue-100 text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-gray-400 hover:text-green-400 transition-all duration-300 hover:scale-110"
             >
               <Linkedin size={24} />
             </a>
             <a
               href="mailto:arthammounika1707@gmail.com"
-              className="p-3 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-600 hover:text-pink-600 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-gray-400 hover:text-green-400 transition-all duration-300 hover:scale-110"
             >
               <Mail size={24} />
             </a>
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                background: ['#C4B5FD', '#FCA5A5', '#93C5FD', '#FEF08A', '#A7F3D0'][i % 5],
+                background: ['#10b981', '#22c55e', '#16a34a', '#15803d', '#166534'][i % 5],
                 animationDelay: `${Math.random() * 3}s`,
                 animationDuration: `${4 + Math.random() * 2}s`,
               }}
