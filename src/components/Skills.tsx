@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     {
       title: 'Programming Languages',
       icon: Code,
-      color: 'from-purple-400 to-purple-600',
+      color: 'from-green-400 to-green-600',
       skills: [
         { name: 'C', level: 85 },
         { name: 'Python', level: 90 },
@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     {
       title: 'Web Development',
       icon: Code,
-      color: 'from-pink-400 to-pink-600',
+      color: 'from-green-500 to-green-700',
       skills: [
         { name: 'HTML/CSS', level: 95 },
         { name: 'React', level: 85 },
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
     {
       title: 'Database Management',
       icon: Database,
-      color: 'from-blue-400 to-blue-600',
+      color: 'from-green-400 to-green-600',
       skills: [
         { name: 'MySQL', level: 85 },
         { name: 'MongoDB', level: 75 },
@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
     {
       title: 'Cloud Technologies',
       icon: Cloud,
-      color: 'from-green-400 to-green-600',
+      color: 'from-green-500 to-green-700',
       skills: [
         { name: 'AWS', level: 75 },
         { name: 'Azure', level: 70 },
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
     {
       title: 'Soft Skills',
       icon: Users,
-      color: 'from-orange-400 to-orange-600',
+      color: 'from-green-400 to-green-600',
       skills: [
         { name: 'Communication', level: 90 },
         { name: 'Leadership', level: 85 },
@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
     {
       title: 'Tools & Others',
       icon: Briefcase,
-      color: 'from-indigo-400 to-indigo-600',
+      color: 'from-green-500 to-green-700',
       skills: [
         { name: 'MS Office', level: 95 },
         { name: 'Git/GitHub', level: 85 },
@@ -85,17 +85,17 @@ const Skills: React.FC = () => {
                 <div className={`p-3 rounded-xl bg-gradient-to-r ${category.color} text-white`}>
                   <category.icon size={24} />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-700">{category.title}</h3>
+                <h3 className="text-lg font-semibold text-green-200">{category.title}</h3>
               </div>
 
               <div className="space-y-4">
                 {category.skills.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-600">{skill.name}</span>
-                      <span className="text-xs text-gray-500">{skill.level}%</span>
+                      <span className="text-sm font-medium text-green-300">{skill.name}</span>
+                      <span className="text-xs text-green-400">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+                    <div className="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
                       <div
                         className={`h-full bg-gradient-to-r ${category.color} transition-all duration-1000 ease-out rounded-full`}
                         style={{ 

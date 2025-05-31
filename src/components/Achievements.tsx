@@ -9,7 +9,7 @@ const Achievements: React.FC = () => {
       issuer: 'Cambridge University Press & Assessment',
       date: '2025',
       icon: Award,
-      color: 'from-blue-400 to-blue-600',
+      color: 'from-green-400 to-green-600',
       type: 'Certification'
     },
     {
@@ -17,7 +17,7 @@ const Achievements: React.FC = () => {
       issuer: 'Google Cloud Platform',
       date: 'Current',
       icon: Code,
-      color: 'from-green-400 to-green-600',
+      color: 'from-green-500 to-green-700',
       type: 'Community'
     },
     {
@@ -25,7 +25,7 @@ const Achievements: React.FC = () => {
       issuer: 'Networking and Collaboration',
       date: 'Current',
       icon: Users,
-      color: 'from-purple-400 to-purple-600',
+      color: 'from-green-400 to-green-600',
       type: 'Community'
     },
     {
@@ -33,7 +33,7 @@ const Achievements: React.FC = () => {
       issuer: 'Student Development Community',
       date: 'Current',
       icon: BookOpen,
-      color: 'from-pink-400 to-pink-600',
+      color: 'from-green-500 to-green-700',
       type: 'Community'
     },
     {
@@ -41,7 +41,7 @@ const Achievements: React.FC = () => {
       issuer: 'AR/VR 3D Models Integration',
       date: '2024',
       icon: Star,
-      color: 'from-orange-400 to-orange-600',
+      color: 'from-green-400 to-green-600',
       type: 'Project'
     },
     {
@@ -49,7 +49,7 @@ const Achievements: React.FC = () => {
       issuer: 'Innovative Technological Solutions',
       date: '2024',
       icon: Trophy,
-      color: 'from-red-400 to-red-600',
+      color: 'from-green-500 to-green-700',
       type: 'Recognition'
     },
     {
@@ -57,7 +57,7 @@ const Achievements: React.FC = () => {
       issuer: 'Team Calamity Calmers (SIH Team ID: 16128)',
       date: '2024',
       icon: Code,
-      color: 'from-indigo-400 to-indigo-600',
+      color: 'from-green-400 to-green-600',
       type: 'Competition'
     },
     {
@@ -65,7 +65,7 @@ const Achievements: React.FC = () => {
       issuer: 'Intel® Unnati Lab',
       date: 'Aug - Sep 2024',
       icon: BookOpen,
-      color: 'from-cyan-400 to-cyan-600',
+      color: 'from-green-500 to-green-700',
       type: 'Training'
     },
     {
@@ -73,7 +73,7 @@ const Achievements: React.FC = () => {
       issuer: 'Professional Skills Development',
       date: 'March 2024',
       icon: Users,
-      color: 'from-teal-400 to-teal-600',
+      color: 'from-green-400 to-green-600',
       type: 'Training'
     },
     {
@@ -81,7 +81,7 @@ const Achievements: React.FC = () => {
       issuer: 'Hyderabad Data & AI Community',
       date: '2025',
       icon: Award,
-      color: 'from-blue-500 to-blue-700',
+      color: 'from-green-500 to-green-700',
       type: 'Bootcamp'
     },
     {
@@ -89,7 +89,7 @@ const Achievements: React.FC = () => {
       issuer: 'Completed Multiple Courses',
       date: 'Ongoing',
       icon: BookOpen,
-      color: 'from-yellow-400 to-yellow-600',
+      color: 'from-green-400 to-green-600',
       type: 'Certification'
     }
   ];
@@ -103,7 +103,7 @@ const Achievements: React.FC = () => {
   }, {} as Record<string, typeof achievements>);
 
   return (
-    <section id="achievements" className="section-padding bg-purple-50/30">
+    <section id="achievements" className="section-padding bg-gray-800/30">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">
           Achievements & Certifications 🏆
@@ -112,7 +112,7 @@ const Achievements: React.FC = () => {
         <div className="space-y-12">
           {Object.entries(groupedAchievements).map(([type, items]) => (
             <div key={type}>
-              <h3 className="text-2xl font-semibold text-center mb-8 text-purple-600">
+              <h3 className="text-2xl font-semibold text-center mb-8 text-green-300">
                 {type}s
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -123,14 +123,14 @@ const Achievements: React.FC = () => {
                         <achievement.icon size={24} />
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-gray-800 mb-2 leading-tight">
+                        <h4 className="font-semibold text-green-200 mb-2 leading-tight">
                           {achievement.title}
                         </h4>
-                        <p className="text-sm text-gray-600 mb-2">
+                        <p className="text-sm text-green-300 mb-2">
                           {achievement.issuer}
                         </p>
                         <div className="flex items-center justify-between">
-                          <span className="text-xs text-gray-500">
+                          <span className="text-xs text-green-400">
                             {achievement.date}
                           </span>
                           <span className={`px-2 py-1 bg-gradient-to-r ${achievement.color} text-white text-xs rounded-full font-medium`}>
@@ -149,20 +149,20 @@ const Achievements: React.FC = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="soft-card p-6 text-center">
-            <div className="text-2xl font-bold text-purple-600 mb-2">11+</div>
-            <div className="text-sm text-gray-600">Certifications</div>
+            <div className="text-2xl font-bold text-green-300 mb-2">11+</div>
+            <div className="text-sm text-green-400">Certifications</div>
           </div>
           <div className="soft-card p-6 text-center">
-            <div className="text-2xl font-bold text-pink-600 mb-2">4</div>
-            <div className="text-sm text-gray-600">Internships</div>
+            <div className="text-2xl font-bold text-green-300 mb-2">4</div>
+            <div className="text-sm text-green-400">Internships</div>
           </div>
           <div className="soft-card p-6 text-center">
-            <div className="text-2xl font-bold text-blue-600 mb-2">5+</div>
-            <div className="text-sm text-gray-600">Projects</div>
+            <div className="text-2xl font-bold text-green-300 mb-2">5+</div>
+            <div className="text-sm text-green-400">Projects</div>
           </div>
           <div className="soft-card p-6 text-center">
-            <div className="text-2xl font-bold text-green-600 mb-2">9.59</div>
-            <div className="text-sm text-gray-600">CGPA</div>
+            <div className="text-2xl font-bold text-green-300 mb-2">9.59</div>
+            <div className="text-sm text-green-400">CGPA</div>
           </div>
         </div>
       </div>
