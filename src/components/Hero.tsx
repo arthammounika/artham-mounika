@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Download, Mail, MapPin, GraduationCap } from 'lucide-react';
+import { Github, Linkedin, Download, Mail, MapPin, GraduationCap, Cloud } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -29,21 +29,21 @@ const Hero: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="soft-card px-6 py-4">
               <div className="flex items-center gap-2">
-                <GraduationCap className="text-green-400" size={20} />
-                <span className="text-green-300 font-medium">CGPA: 9.59</span>
+                <GraduationCap className="text-blue-400" size={20} />
+                <span className="text-white font-medium">CGPA: 9.59</span>
               </div>
             </div>
             <div className="soft-card px-6 py-4">
               <div className="flex items-center gap-2">
-                <MapPin className="text-green-400" size={20} />
-                <span className="text-green-300 font-medium">MRCET</span>
+                <MapPin className="text-purple-400" size={20} />
+                <span className="text-white font-medium">MRCET</span>
               </div>
             </div>
           </div>
 
           {/* Bio */}
           <div className="soft-card p-6 mb-8 max-w-2xl mx-auto">
-            <p className="text-green-200 leading-relaxed">
+            <p className="text-gray-200 leading-relaxed">
               A passionate CSE student who loves turning ideas into reality through code. 
               Currently exploring the fascinating world of cloud computing, full-stack development, 
               and building meaningful projects that make a difference. Always eager to learn and grow! 🚀
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               href="https://github.com/arthammounika"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-green-400 hover:text-green-300 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
             >
               <Github size={24} />
             </a>
@@ -83,13 +83,21 @@ const Hero: React.FC = () => {
               href="https://www.linkedin.com/in/artham-mounika-383857300"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-green-400 hover:text-green-300 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-blue-600 text-blue-400 hover:text-white transition-all duration-300 hover:scale-110"
             >
               <Linkedin size={24} />
             </a>
             <a
+              href="https://www.cloudskillsboost.google/public_profiles/1f5fba5f-ff88-4770-bf9a-8713dce9c7b9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-gray-800 hover:bg-orange-600 text-orange-400 hover:text-white transition-all duration-300 hover:scale-110"
+            >
+              <Cloud size={24} />
+            </a>
+            <a
               href="mailto:arthammounika1707@gmail.com"
-              className="p-3 rounded-full bg-gray-800 hover:bg-green-500/20 text-green-400 hover:text-green-300 transition-all duration-300 hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-red-600 text-red-400 hover:text-white transition-all duration-300 hover:scale-110"
             >
               <Mail size={24} />
             </a>

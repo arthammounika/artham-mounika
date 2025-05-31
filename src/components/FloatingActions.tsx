@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Download, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, ArrowUp, Cloud } from 'lucide-react';
 
 const FloatingActions: React.FC = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -22,25 +22,31 @@ const FloatingActions: React.FC = () => {
     {
       icon: Github,
       href: 'https://github.com/arthammounika',
-      color: 'from-gray-600 to-gray-800',
+      color: 'from-gray-500 to-gray-700',
       label: 'GitHub'
     },
     {
       icon: Linkedin,
       href: 'https://www.linkedin.com/in/artham-mounika-383857300',
-      color: 'from-blue-500 to-blue-700',
+      color: 'from-blue-400 to-blue-600',
       label: 'LinkedIn'
+    },
+    {
+      icon: Cloud,
+      href: 'https://www.cloudskillsboost.google/public_profiles/1f5fba5f-ff88-4770-bf9a-8713dce9c7b9',
+      color: 'from-orange-400 to-orange-600',
+      label: 'Cloud Skills'
     },
     {
       icon: Mail,
       href: 'mailto:arthammounika1707@gmail.com',
-      color: 'from-pink-500 to-pink-700',
+      color: 'from-red-400 to-red-600',
       label: 'Email'
     },
     {
       icon: Download,
       href: '/resume.pdf',
-      color: 'from-purple-500 to-purple-700',
+      color: 'from-purple-400 to-purple-600',
       label: 'Resume'
     }
   ];
@@ -69,7 +75,7 @@ const FloatingActions: React.FC = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed left-4 bottom-4 p-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 z-40"
+          className="fixed left-4 bottom-4 p-3 rounded-full bg-gradient-to-r from-indigo-400 to-indigo-600 text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 z-40"
           title="Back to top"
         >
           <ArrowUp size={20} />
