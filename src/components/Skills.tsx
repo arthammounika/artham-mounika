@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     {
       title: 'Programming Languages',
       icon: Code,
-      color: 'from-green-400 to-green-600',
+      color: 'from-blue-400 to-blue-600',
       skills: [
         { name: 'C', level: 85 },
         { name: 'Python', level: 90 },
@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     {
       title: 'Web Development',
       icon: Code,
-      color: 'from-green-500 to-green-700',
+      color: 'from-purple-500 to-purple-700',
       skills: [
         { name: 'HTML/CSS', level: 95 },
         { name: 'React', level: 85 },
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
     {
       title: 'Database Management',
       icon: Database,
-      color: 'from-green-400 to-green-600',
+      color: 'from-orange-400 to-orange-600',
       skills: [
         { name: 'MySQL', level: 85 },
         { name: 'MongoDB', level: 75 },
@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
     {
       title: 'Cloud Technologies',
       icon: Cloud,
-      color: 'from-green-500 to-green-700',
+      color: 'from-cyan-500 to-cyan-700',
       skills: [
         { name: 'AWS', level: 75 },
         { name: 'Azure', level: 70 },
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
     {
       title: 'Soft Skills',
       icon: Users,
-      color: 'from-green-400 to-green-600',
+      color: 'from-pink-400 to-pink-600',
       skills: [
         { name: 'Communication', level: 90 },
         { name: 'Leadership', level: 85 },
@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
     {
       title: 'Tools & Others',
       icon: Briefcase,
-      color: 'from-green-500 to-green-700',
+      color: 'from-indigo-500 to-indigo-700',
       skills: [
         { name: 'MS Office', level: 95 },
         { name: 'Git/GitHub', level: 85 },
@@ -74,7 +74,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="section-padding">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
           Skills & Expertise 🚀
         </h2>
 
@@ -85,15 +85,15 @@ const Skills: React.FC = () => {
                 <div className={`p-3 rounded-xl bg-gradient-to-r ${category.color} text-white`}>
                   <category.icon size={24} />
                 </div>
-                <h3 className="text-lg font-semibold text-green-200">{category.title}</h3>
+                <h3 className="text-lg font-semibold text-gray-200">{category.title}</h3>
               </div>
 
               <div className="space-y-4">
                 {category.skills.map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-green-300">{skill.name}</span>
-                      <span className="text-xs text-green-400">{skill.level}%</span>
+                      <span className="text-sm font-medium text-gray-300">{skill.name}</span>
+                      <span className="text-xs text-gray-400">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
                       <div

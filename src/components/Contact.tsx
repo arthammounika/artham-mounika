@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="section-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
           Let's Connect! 💬
         </h2>
 
@@ -64,10 +64,10 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <div className="soft-card p-8">
-              <h3 className="text-2xl font-semibold text-purple-600 mb-6">
+              <h3 className="text-2xl font-semibold text-cyan-300 mb-6">
                 Get In Touch
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-200 leading-relaxed mb-6">
                 I'm always excited to connect with fellow developers, potential collaborators, 
                 or anyone interested in discussing technology and innovation. Feel free to reach out!
               </p>
@@ -79,14 +79,14 @@ const Contact: React.FC = () => {
                     href={href}
                     target={href.startsWith('http') ? '_blank' : undefined}
                     rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-center gap-4 p-4 rounded-2xl border border-purple-100 hover:border-purple-200 hover:shadow-md transition-all duration-300 group"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-gray-800/60 border border-gray-600/50 hover:border-gray-400/70 hover:scale-105 transition-all duration-300 group"
                   >
                     <div className={`p-3 rounded-xl bg-gradient-to-r ${color} text-white`}>
                       <Icon size={20} />
                     </div>
                     <div>
-                      <div className="text-sm text-gray-500">{label}</div>
-                      <div className="font-medium text-gray-700 group-hover:text-purple-600 transition-colors">
+                      <div className="text-sm text-gray-400">{label}</div>
+                      <div className="font-medium text-gray-200 group-hover:text-white transition-colors">
                         {value}
                       </div>
                     </div>
@@ -97,21 +97,21 @@ const Contact: React.FC = () => {
 
             {/* Quick Stats */}
             <div className="soft-card p-6">
-              <h4 className="text-lg font-semibold text-purple-600 mb-4">
+              <h4 className="text-lg font-semibold text-orange-300 mb-4">
                 Quick Facts
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
-                  <MapPin className="text-purple-500" size={16} />
-                  <span className="text-sm text-gray-600">Based in Hyderabad, India</span>
+                  <MapPin className="text-purple-400" size={16} />
+                  <span className="text-sm text-gray-200">Based in Hyderabad, India</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-4 h-4 bg-green-400 rounded-full"></span>
-                  <span className="text-sm text-gray-600">Available for opportunities</span>
+                  <span className="text-sm text-gray-200">Available for opportunities</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-4 h-4 bg-blue-400 rounded-full"></span>
-                  <span className="text-sm text-gray-600">Open to collaborations</span>
+                  <span className="text-sm text-gray-200">Open to collaborations</span>
                 </div>
               </div>
             </div>
@@ -119,13 +119,13 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className="soft-card p-8">
-            <h3 className="text-2xl font-semibold text-purple-600 mb-6">
+            <h3 className="text-2xl font-semibold text-pink-300 mb-6">
               Send a Message
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Name
                 </label>
                 <input
@@ -135,13 +135,13 @@ const Contact: React.FC = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full p-4 border border-purple-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                  className="w-full p-4 bg-gray-800/60 border border-gray-600/50 text-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                   Email
                 </label>
                 <input
@@ -151,13 +151,13 @@ const Contact: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full p-4 border border-purple-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                  className="w-full p-4 bg-gray-800/60 border border-gray-600/50 text-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -167,7 +167,7 @@ const Contact: React.FC = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full p-4 border border-purple-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full p-4 bg-gray-800/60 border border-gray-600/50 text-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell me about your project or just say hi!"
                 />
               </div>
