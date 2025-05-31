@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { Book, Coffee, Code, Music, Travel, Camera } from 'lucide-react';
+import { Book, Coffee, Code, Music, MapPin, Camera } from 'lucide-react';
 
 const About: React.FC = () => {
   const interests = [
     { icon: Code, label: 'Coding', color: 'text-purple-500' },
     { icon: Book, label: 'Reading', color: 'text-blue-500' },
     { icon: Music, label: 'Music', color: 'text-pink-500' },
-    { icon: Travel, label: 'Travel', color: 'text-green-500' },
+    { icon: MapPin, label: 'Travel', color: 'text-green-500' },
     { icon: Camera, label: 'Photography', color: 'text-orange-500' },
     { icon: Coffee, label: 'Coffee', color: 'text-yellow-600' },
   ];
